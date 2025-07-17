@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+/* Shared Style  */
+.primary-bg-color{
+    background-color: rgba(229, 84, 115, 0.1);
+}
+.primary-text{
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 1.11rem;
+}
+.primary-btn{
+    background-color: #E55473;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 20px 45px;
+    border: none;
+    border-radius: 8px;
+}
+.h3-text{
+    color: #272727;
+    font-size: 2.5rem;
+}
+.card-text{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.display-flex{
+    display: flex;
+}
+.feature-card-style{
+    justify-content: center;
+    align-items: end;
+    width: 420px;
+    height: 510px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+}
+main > section{
+    margin-top: 178px;
+}
+
+/* Header Section Related Style  */
+.header{
+   /* max-width: 1920px; */
+   justify-content: center;
+   align-items: center;
+   gap: 100px;
+   margin: 0 auto;
+}
+.header-title{
+    max-width: 700px;
+}
+.header-title h1{
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+.header-image img{
+    width: 100%;
+}
+.header-title-btn{
+    margin-top: 20px;
+}
+
+/* Feature Related Style  */
+.feature-card{
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 48px;
+}
+.feature-card-1{
+    background-color: rgba(167, 33, 98, 0.15);
+}
+.feature-card-2{
+    background-color: rgba(5, 151, 160, 0.15);
+}
+.feature-card-3{
+    background-color: rgba(71, 125, 17, 0.15);
+}
+.feature-title{
+    max-width: 590px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Icon Card Style  */
+.icon-card{
+    background-color: rgba(39, 39, 39, 0.05);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    max-width: 1440px;
+    height: 320px;
+    margin: 150px auto;
+    border-radius: 10px;
+}
+
+/* Discount Sale Section Style  */
+.discount-sale{
+    justify-content: center;
+    align-items: center;
+    gap: 186px;
+    height: 610px;
+}
+.discount-sale-title{
+    max-width: 590px;
+    text-align: center;
+}
+
+/* Instagram Section Style  */
+.instagram{
+    max-width: 1440px;
+    margin: 130px auto;
+}
+.instagram-title{
+    max-width: 590px;
+    text-align: center;
+    margin: 50px auto;
+}
+.instagram-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+
+/* Latest Deals Section Style  */
+.latest-deals{
+    max-width: 1440px;
+    margin: 130px auto;
+}
+.latest-deals img{
+    width: 100%;
+}
+.search-btn{
+    text-align: center;
+    max-width: 865px;
+    margin-top: -300px;
+    margin-left: 280px;
+}
+.search-btn h3{
+    margin: 10px;
+}
+.input{
+    width: 650px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 10px;
+    font-size: 1.25rem;
+    padding-left: 20px;
+}
+
+/* Footer Style  */
+footer{
+     margin-top: 200px;
+     background-color: black;
+     height: 450px;
+}
+.footer-div{
+    max-width: 640px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+#flower{
+    color: #E55473;
+}
+#shop{
+    color: white;
+}
+.flowershop{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+/* Small Device Responsive Style  */
+@media screen and (max-width: 576px) {
+    .header,
+    .discount-sale,
+    .feature-card{
+        flex-direction: column;
+    }
+    .instagram-card{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .header,
+    .discount-sale,
+    .feature-card{
+        justify-items: center;
+    }
+    .header-title{
+        text-align: center;
+    }
+    .feature-title, .discount-sale-image img{
+        margin-top: -90px;
+    }
+    .instagram{
+        margin-top: 200px;
+    }
+
+}
+
+/* Medium Device Responsive Style  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+     .header,
+    .feature-card{
+        flex-direction: column;
+    }
+    .instagram-card{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .header,
+    .feature-card{
+        justify-items: center;
+    }
+    .header-title{
+        text-align: center;
+    }
+    .feature-title{
+        margin-top: -90px;
+    }
+}
