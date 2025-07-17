@@ -203,9 +203,35 @@ footer{
         margin-top: -90px;
     }
     .instagram{
-        margin-top: 200px;
+        margin-top: 0;
     }
-
+    .instagram-title p{
+        width: 90%;
+    }
+    .instagram-card{
+        margin-left: 10px;
+    }
+    .search-btn{
+        /* margin-left: 10px; */
+        padding-left: 90px;
+        margin: 0px;
+        width: 50%;
+        font-size: 20px;
+    }
+    .latest-deals img{
+    width: 82%;
+    }
+    .discount-sale{
+        margin: 10px;
+        height: 100%;
+    }
+    .input{
+        width: 90%;
+        border: 1px solid #272727;
+    }
+    footer{
+        margin-top: 0;
+    }
 }
 
 /* Medium Device Responsive Style  */
